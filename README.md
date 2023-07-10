@@ -1,14 +1,16 @@
 # Attendance Managment
 
-This is a simple example in which we made a smart contract called Hospital Management that maintains a mapping of patients and their admission status.
+This is a simple example in which we made a smart contract called Attendance Management that maintains a mapping of students and their attendance status as form of true and false.
 
 # Requirements
 
 Firstly construct an object having properties as follows:
 
-  1)"ID": It is an unsigned integer data type that represents the patient id.
-  2)"Name": It is a string data type that represents the patient's name.
-  3)"admitted": It is a boolean data type that tells patient is admitted or not.
+  1)"ID": It is an unsigned integer data type that represents the student id.
+  
+  2)"Name": It is a string data type that represents the student's name.
+  
+  3)"attendance": It is a boolean data type that tells student is present or not.
   
 # Mapping
 
