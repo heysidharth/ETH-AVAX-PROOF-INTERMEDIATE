@@ -1,7 +1,9 @@
 #Attendance Managment
+
 This is a simple example in which we made a smart contract called Hospital Management that maintains a mapping of patients and their admission status.
 
 #Requirements
+
 Firstly construct an object having properties as follows:
 
   1)"ID": It is an unsigned integer data type that represents the patient id.
@@ -9,9 +11,11 @@ Firstly construct an object having properties as follows:
   3)"admitted": It is a boolean data type that tells patient is admitted or not.
   
 #Mapping
+
 The Attendance Managemnet contract has a mapping of uint to Student
 
 #Executing program
+
 The contract includes three functions: PresentStudent(), AbsentStudent(), and updateStudentName(), which showcase the usage of require(), assert(), and revert() statements, respectively.
 
 1)The PresentStudent() function:
