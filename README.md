@@ -8,7 +8,7 @@ This Solidity program is a simple "Error handling " program that demonstrates th
 
 # Executing program
 
-I present the ETH-AVAX proof intermediate module 1 project. The project is licensed under MIT and uses pragma version ^0.8.9. I explain the contract named "error handling" and demonstrate the use of the constructor to initialize variables. Additionally, I showcase three functions and provide an example of a request statement. See the code for better understanding.
+I present the ETH-AVAX proof intermediate module 1 project. The project is licensed under MIT and uses pragma version ^0.8.9. I explain the contract named "error handling" and demonstrate the use of the constructor to initialize variables. Additionally, I showcase three functions and provide an example of a request statement. See the code and loom video for better understanding.
 
 which showcase the usage of require(), assert(), and revert() statements, respectively.
 
