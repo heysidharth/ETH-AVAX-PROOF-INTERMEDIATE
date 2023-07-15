@@ -6,44 +6,31 @@ pragma solidity ^0.8.9;
     1) For this project, write a smart contract that implements the require(), assert() and revert() statements.
  */
 
-contract AttendanceManagment {
-    struct student{
-        uint id;
-        string name;
-        bool attendance;
+ contract errorhandling {
+     address public owner;
+     uint public count;
+
+     constructor() {
+         owner = msg.sender;
+     }
+
+     //require statement
+    function Firstcall() public {
+        count++;
+        require(msg.sender == owner, "caller is not owner");
     }
 
-    mapping (uint => student) public students;
-    uint public studentcount;
-
-    function presentstudent(uint _id, string memory _name) public  {
-        //require statements
-        require(!students[_id].attendance, "student is already present in attendance");        
-
-
-        //assert statements
-        assert(bytes(_name).length > 0);
-        
-        students[_id] = student(_id, _name, true);
-        studentcount++;
-    }
-
-    function absentstudent(uint _id) public {
-        //require statements
-        require(students[_id].attendance, "student is not present in attendance");
-
-        students[_id].attendance = false;
-        studentcount--;
-    }
-
-    function updatestudentName(uint _id, string memory _name) public {
-        //revert statements
-        if (bytes(_name).length == 0) {
-            revert("Name can't be empty");
+     //revert statement
+    function Secondcall () public {
+        count++;
+        if (msg.sender != owner) {
+            revert("caller is not owner");
         }
-
-        students[_id].name = _name;
-
     }
 
-}
+    //assert statement
+    function Thirdcall() public {
+        count++;
+        assert(msg.sender == owner);
+    }
+ }
