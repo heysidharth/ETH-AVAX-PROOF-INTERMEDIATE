@@ -1,36 +1,28 @@
-# Attendance Managment
+# Error Handling
 
-This is a simple example in which we made a smart contract called Attendance Management that maintains a mapping of students and their attendance status as form of true and false.
+This is a simple example in which we made a small project called Error Handling that contain the example of following function i.e Require (), Revert (), Assert ().
 
-# Requirements
+# Functions and Errors
 
-Firstly construct an object having properties as follows:
-
-  1)"ID": It is an unsigned integer data type that represents the student id.
-  
-  2)"Name": It is a string data type that represents the student's name.
-  
-  3)"attendance": It is a boolean data type that tells student is present or not.
-  
-# Mapping
-
-The Attendance Managemnet contract has a mapping of uint to Student
+This Solidity program is a simple "Error handling " program that demonstrates the basic syntax and functionality of error handing in the Solidity programming language. The purpose of this program to demonstrate how error handling is done using require, revert and assert keywords.
 
 # Executing program
 
+I present the ETH-AVAX proof intermediate module 1 project. The project is licensed under MIT and uses pragma version ^0.8.9. I explain the contract named "error handling" and demonstrate the use of the constructor to initialize variables. Additionally, I showcase three functions and provide an example of a request statement. See the code for better understanding.
+
 The contract includes three functions: PresentStudent(), AbsentStudent(), and updateStudentName(), which showcase the usage of require(), assert(), and revert() statements, respectively.
 
-#1)The PresentStudent() function:
-It is used to see the student present by providing their ID and name. The require() statement ensures that the student is not already present. Additionally, the assert() statement verifies that the name provided is not empty.
+#1)The Firstcall() function:
+We call the firstcall as require function. Require statement analyze conditions and It has 2 parameter as input. First we have to validate while second if condition fail passed back to caller.
 
 
-#2)The AbsentStudent() function:
-It is responsible for student absend based on their ID. The require() statement verifies that the student is currently absent.
+#2)The Secondcall() function:
+It is responsible for Revert function. Revert statement generate can contain error strings. if we dont use revert statement and some error occurs, then enitre gas is lost.
 
 
-#3)The updateStudentName() function:
-It allows for updating a Student's name. The revert() statement is utilized to prevent an empty name from being assigned to a Student.
+#3)The Thirdcall() function:
+Third call is basically Assert statement. It check condition should never be wrong in our contract and check if the name of the owner is provided or not i.e it should not be empty. In assert we give simply condition.
 
 
 # Video Walkthrough
-https://www.loom.com/share/f99534b67b0c44789c3193bc98352019
+https://www.loom.com/share/92f849cfa4644426b983468f9d1bf616
