@@ -10,7 +10,7 @@ This Solidity program is a simple "Error handling " program that demonstrates th
 
 I present the ETH-AVAX proof intermediate module 1 project. The project is licensed under MIT and uses pragma version ^0.8.9. I explain the contract named "error handling" and demonstrate the use of the constructor to initialize variables. Additionally, I showcase three functions and provide an example of a request statement. See the code for better understanding.
 
-The contract includes three functions: PresentStudent(), AbsentStudent(), and updateStudentName(), which showcase the usage of require(), assert(), and revert() statements, respectively.
+which showcase the usage of require(), assert(), and revert() statements, respectively.
 
 #1)The Firstcall() function:
 We call the firstcall as require function. Require statement analyze conditions and It has 2 parameter as input. First we have to validate while second if condition fail passed back to caller.
